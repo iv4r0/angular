@@ -1,7 +1,10 @@
-export const products = [
+
+import { Product } from "./product";
+
+export const products:Product[] = [
     {
         name: 'Phone Zeus',
-        price: 759.90,
+        price: 650.90,
         description: 'A large phone with one of the best screens'
     },
     {

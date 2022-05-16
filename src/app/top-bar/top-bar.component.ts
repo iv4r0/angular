@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopBarComponent implements OnInit {
 
+  title = 'Ivaro Store';
   constructor() { }
 
   ngOnInit(): void {

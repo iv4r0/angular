@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { products } from '../mock-products';
+import { CartService } from '../cart.service';
+import { Product } from '../product';
 
 @Component({
   selector: 'app-product-detail',
@@ -8,14 +10,19 @@ import { products } from '../mock-products';
   styleUrls: ['./product-detail.component.css']
 })
 export class ProductDetailComponent implements OnInit {
-  
-  product:any;
 
+  product:any;
   private num:any;
 
   constructor(
     private route: ActivatedRoute,
+    private cartService: CartService
   ) { }
+
+  addToCart(product:Product){
+    this.cartService.addTocart(product);
+    window.alert('Your product has been added to the cart!');
+  }
 
   ngOnInit() {
 

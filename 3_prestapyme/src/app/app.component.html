@@ -1,4 +1,13 @@
 <main class="full-box main-container">
-    <app-nav-bar-main></app-nav-bar-main>
-    <router-outlet></router-outlet>
+    <section class="full-box nav-lateral">
+        <div class="full-box nav-lateral-bg show-nav-lateral"></div>
+        <div class="full-box nav-lateral-content">
+            <app-nav-bar-main></app-nav-bar-main>
+        </div>
+    </section>
+    <section class="full-box page-content">
+        <app-nav-bar-info></app-nav-bar-info>
+        <app-header></app-header>
+        <router-outlet></router-outlet>
+    </section>
 </main>

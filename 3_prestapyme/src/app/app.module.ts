@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/acces-control/login/login.component';
 import { HomeComponent } from './components/dashboard/home/home.component';
-import { NavBarMainComponent } from './components/nav/main/main.component';
+import { NavBarMainComponent } from './components/nav/main/nav-bar-main.component';
 import { ClientNewComponent } from './components/clients/client-new/client-new.component';
 import { ClientListComponent } from './components/clients/client-list/client-list.component';
 import { ClientSearchComponent } from './components/clients/client-search/client-search.component';
@@ -13,8 +13,9 @@ import { UserNewComponent } from './components/users/user-new/user-new.component
 import { UserListComponent } from './components/users/user-list/user-list.component';
 import { UserSearchComponent } from './components/users/user-search/user-search.component';
 import { UserUpdateComponent } from './components/users/user-update/user-update.component';
-import { NavBarPageComponent } from './components/nav/page/page.component';
-import { NavBarUserComponent } from './components/nav/user/user.component';
+import { NavBarTabComponent } from './components/nav/tab/nar-bar-tab.component';
+import { NavBarInfoComponent } from './components/nav/info/nav-bar-info.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -29,8 +30,9 @@ import { NavBarUserComponent } from './components/nav/user/user.component';
     UserListComponent,
     UserSearchComponent,
     UserUpdateComponent,
-    NavBarPageComponent,
-    NavBarUserComponent
+    NavBarTabComponent,
+    NavBarInfoComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

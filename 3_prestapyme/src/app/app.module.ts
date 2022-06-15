@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,7 +14,7 @@ import { UserNewComponent } from './components/users/user-new/user-new.component
 import { UserListComponent } from './components/users/user-list/user-list.component';
 import { UserSearchComponent } from './components/users/user-search/user-search.component';
 import { UserUpdateComponent } from './components/users/user-update/user-update.component';
-import { NavBarTabComponent } from './components/nav/tab/nar-bar-tab.component';
+import { NavBarTabComponent } from './components/nav/tab/nav-bar-tab.component';
 import { NavBarInfoComponent } from './components/nav/info/nav-bar-info.component';
 import { HeaderComponent } from './components/header/header.component';
 
@@ -36,7 +37,8 @@ import { HeaderComponent } from './components/header/header.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

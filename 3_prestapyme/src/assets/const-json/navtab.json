@@ -1,0 +1,23 @@
+[
+    {  
+        "id": "user",
+        "contenido": [
+            {
+                "icono": "fas fa-plus fa-fw",
+                "titulo": "NUEVO USUARIO",
+                "url": "/user-new"
+            },
+            {
+                "icono": "fas fa-clipboard-list fa-fw",
+                "titulo": "LISTA DE USUARIOS",
+                "url": "/user-list"
+            },
+            {
+                "icono": "fas fa-search fa-fw",
+                "titulo": "BUSCAR USUARIO",
+                "url": "/user-search"
+            }
+        ]
+        
+    }
+]

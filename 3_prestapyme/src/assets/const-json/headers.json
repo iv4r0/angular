@@ -1,0 +1,27 @@
+[
+    {   "id": "user-new",
+        "icono": "fas fa-plus fa-fw",
+        "titulo": "NUEVO USUARIO",
+        "contenido": "Aquí podras crear nuevos usuarios agregando sus datos personales e información de la cuenta de usuario, asi mismo podrás asignarle privilegios para restringir las opciones de acceso."
+    },
+    {   "id": "user-list",
+        "icono": "fas fa-clipboard-list fa-fw",
+        "titulo": "LISTA DE USUARIOS",
+        "contenido": "Aquí podras listar los usuarios y ver sus datos personales e información de la cuenta de usuario, asi mismo podrás ver sus privilegios de acceso."
+    },
+    {   "id": "user-search",
+        "icono": "fas fa-search fa-fw",
+        "titulo": "BUSCAR USUARIO",
+        "contenido": "Aquí podras buscar a los usuarios y ver sus datos personales e información de la cuenta de usuario, asi mismo podrás ver sus privilegios de acceso."
+    },
+    {   "id": "user-update",
+        "icono": "",
+        "titulo": "",
+        "contenido": ""
+    },
+    {   "id": "home",
+        "icono": "fab fa-dashcube fa-fw",
+        "titulo": "DASHBOARD",
+        "contenido": "Este es la página principal del sistema prestapyme. Gestione usuarios y administre los prestamos desde este panel."
+    }
+]

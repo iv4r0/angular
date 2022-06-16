@@ -1,0 +1,9 @@
+<!-- Page header -->
+<div class="full-box page-header" *ngIf="header[0]">
+    <h3 class="text-left">
+        <i [ngClass]="header[0].icono"></i> &nbsp; {{ header[0].titulo }}
+    </h3>
+    <p class="text-justify">
+        {{ header[0].contenido}}
+    </p>
+</div>

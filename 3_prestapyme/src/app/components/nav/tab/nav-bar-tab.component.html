@@ -1,7 +1,7 @@
 <div class="container-fluid" *ngIf="navtab[0]">
     <ul class="full-box list-unstyled page-nav-tabs">
         <li *ngFor="let contenido of navtab[0].contenido">
-            <a [ngClass]="contenido.url === url ? 'active' : ''" [routerLink]="[contenido.url]"><i [ngClass]="[contenido.icono]"></i> &nbsp; {{ contenido.titulo }}</a>
+            <a [ngClass]="contenido.url === url ? 'active' : ''" [routerLink]="[contenido.url]"><i [ngClass]="[contenido.icono]"></i> &nbsp; {{ contenido.titulo | uppercase }}</a>
         </li>
     </ul>	
 </div>

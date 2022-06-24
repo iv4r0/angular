@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { Usuario } from 'src/app/interfaces';
+import { UsuarioService } from 'src/app/services/usuario.service';
+import { Observable, Subject } from 'rxjs';
+import {
+  debounceTime, distinctUntilChanged, switchMap
+} from 'rxjs/operators';
 
 @Component({
   selector: 'app-user-list',
@@ -7,9 +13,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserListComponent implements OnInit {
 
-  constructor() { }
+  Usuarios : Usuario[] = [];
+
+  constructor(private usuarioService: UsuarioService) { }
 
   ngOnInit(): void {
+    this.listar();
   }
 
+  listar():void{
+    this.usuarioService.listar()
+    .subscribe( resp => this.Usuarios = resp);
+  }
 }

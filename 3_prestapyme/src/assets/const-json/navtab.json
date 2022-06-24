@@ -4,17 +4,17 @@
         "contenido": [
             {
                 "icono": "fas fa-plus fa-fw",
-                "titulo": "NUEVO USUARIO",
+                "titulo": "nuevo usuario",
                 "url": "/user-new"
             },
             {
                 "icono": "fas fa-clipboard-list fa-fw",
-                "titulo": "LISTA DE USUARIOS",
+                "titulo": "lista de usuarios",
                 "url": "/user-list"
             },
             {
                 "icono": "fas fa-search fa-fw",
-                "titulo": "BUSCAR USUARIO",
+                "titulo": "buscar usuario",
                 "url": "/user-search"
             }
         ]

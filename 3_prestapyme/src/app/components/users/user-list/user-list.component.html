@@ -19,79 +19,16 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="text-center" >
-                    <td>1</td>
-                    <th>03045643</th>
-                    <th>NOMBRE DE USUARIO</th>
-                    <th>APELLIDO DE USUARIO</th>
-                    <th>2345456</th>
-                    <th>NOMBRE DE USUARIO</th>
-                    <th>ADMIN@ADMIN.COM</th>
+                <tr class="text-center" *ngFor="let usuario of Usuarios">
+                    <td>{{ usuario.id }}</td>
+                    <th>{{ usuario.dni }}</th>
+                    <th>{{ usuario.nombres }}</th>
+                    <th>{{ usuario.apellidos }}</th>
+                    <th>{{ usuario.telefono }}</th>
+                    <th>{{ usuario.login }}</th>
+                    <th>{{ usuario.email }}</th>
                     <td>
                         <a routerLink="/user-update" class="btn btn-success">
-                                <i class="fas fa-sync-alt"></i>	
-                        </a>
-                    </td>
-                    <td>
-                        <form action="">
-                            <button type="button" class="btn btn-warning">
-                                    <i class="far fa-trash-alt"></i>
-                            </button>
-                        </form>
-                    </td>
-                </tr>
-                <tr class="text-center" >
-                    <td>2</td>
-                    <th>03045643</th>
-                    <th>NOMBRE DE USUARIO</th>
-                    <th>APELLIDO DE USUARIO</th>
-                    <th>2345456</th>
-                    <th>NOMBRE DE USUARIO</th>
-                    <th>ADMIN@ADMIN.COM</th>
-                    <td>
-                        <a routerLink="/user-update" class="btn btn-success">
-                                <i class="fas fa-sync-alt"></i>	
-                        </a>
-                    </td>
-                    <td>
-                        <form action="">
-                            <button type="button" class="btn btn-warning">
-                                    <i class="far fa-trash-alt"></i>
-                            </button>
-                        </form>
-                    </td>
-                </tr>
-                <tr class="text-center" >
-                    <td>3</td>
-                    <th>03045643</th>
-                    <th>NOMBRE DE USUARIO</th>
-                    <th>APELLIDO DE USUARIO</th>
-                    <th>2345456</th>
-                    <th>NOMBRE DE USUARIO</th>
-                    <th>ADMIN@ADMIN.COM</th>
-                    <td>
-                        <a routerLink="/user-update" class="btn btn-success">
-                                <i class="fas fa-sync-alt"></i>	
-                        </a>
-                    </td>
-                    <td>
-                        <form action="">
-                            <button type="button" class="btn btn-warning">
-                                    <i class="far fa-trash-alt"></i>
-                            </button>
-                        </form>
-                    </td>
-                </tr>
-                <tr class="text-center" >
-                    <td>4</td>
-                    <th>03045643</th>
-                    <th>NOMBRE DE USUARIO</th>
-                    <th>APELLIDO DE USUARIO</th>
-                    <th>2345456</th>
-                    <th>NOMBRE DE USUARIO</th>
-                    <th>ADMIN@ADMIN.COM</th>
-                    <td>
-                        <a routerLink="user-update" class="btn btn-success">
                                 <i class="fas fa-sync-alt"></i>	
                         </a>
                     </td>

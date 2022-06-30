@@ -9,7 +9,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 })
 export class HeadersService {
 
-  private headerUrl = '/assets/const-json/headers.json';
+  private headerUrl = 'https://angular-prestapyme-default-rtdb.firebaseio.com/header.json';
 
   getHeaders(): Observable<Header[]>{
     return this.http.get<Header[]>(this.headerUrl);

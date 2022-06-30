@@ -22,7 +22,7 @@ export class UserListComponent implements OnInit {
   }
 
   listar():void{
-    this.usuarioService.listar()
+    this.usuarioService.get()
     .subscribe( resp => this.Usuarios = resp);
   }
 }

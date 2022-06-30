@@ -38,7 +38,7 @@
     
     <!-- Content -->
     <div class="container-fluid">
-        <form action="" class="form-neon" autocomplete="off">
+        <form [formGroup]="checkoutForm" class="form-neon" autocomplete="off" (ngSubmit)="onSubmit()">
             <fieldset>
                 <legend><i class="far fa-address-card"></i> &nbsp; Información personal</legend>
                 <div class="container-fluid">
@@ -46,7 +46,7 @@
                         <div class="col-12 col-md-4">
                             <div class="form-group">
                                 <label for="usuario_dni" class="bmd-label-floating">DNI</label>
-                                <input type="text" pattern="[0-9-]{1,20}" class="form-control" name="usuario_dni" id="usuario_dni" maxlength="20">
+                                <input type="text" pattern="[0-9-]{1,20}" class="form-control" name="usuario_dni" id="usuario_dni" maxlength="20" formControlName="usuario_dni">
                             </div>
                         </div>
                         

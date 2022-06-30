@@ -104,5 +104,7 @@
       }
     }
   },
-  "defaultProject": "3_prestapyme"
+  "cli": {
+    "analytics": false
+  }
 }

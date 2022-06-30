@@ -10,7 +10,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 })
 export class NavtabService {
 
-  private navtabUrl = '/assets/const-json/navtab.json';
+  private navtabUrl = 'https://angular-prestapyme-default-rtdb.firebaseio.com/navtab.json';
 
   getNavTabs(): Observable<Navtab[]>{
     return this.http.get<Navtab[]>(this.navtabUrl);

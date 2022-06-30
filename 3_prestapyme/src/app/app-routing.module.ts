@@ -11,7 +11,7 @@ import { UserSearchComponent } from './components/users/user-search/user-search.
 import { UserUpdateComponent } from './components/users/user-update/user-update.component';
 
 const routes: Routes = [
-  {path:'', redirectTo:'/login', pathMatch: 'full'},
+  {path:'', redirectTo:'login', pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
   {path: 'home', component: HomeComponent},
   {path: 'client-new', component: ClientNewComponent},
@@ -24,7 +24,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash : true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

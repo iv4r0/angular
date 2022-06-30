@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { UntypedFormBuilder, Validators } from '@angular/forms';
 import { UsuarioService } from 'src/app/services/usuario.service';
 
 @Component({
@@ -22,7 +22,7 @@ export class UserUpdateComponent implements OnInit {
   });
 
   constructor(  private usuarioService: UsuarioService,
-                private formBuilder: FormBuilder,
+                private formBuilder: UntypedFormBuilder,
               ) { }
   
   ngOnInit(): void {

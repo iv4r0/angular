@@ -21,12 +21,12 @@ export class NavBarTabComponent implements OnInit {
   ngOnInit(): void {
     this.url = this.router.url;
     this.getNavTab();
+    console.log('llama navtab');
   }
 
   getNavTab(): void {
     const index = this.router.url.indexOf("-");
     const id = this.router.url.substring(1,index);
-
     //const id = this.route.snapshot.paramMap.get('id')!; para obtener el id desde url como un parametro
     this.navtabServices.getNavTabById(id).subscribe(res => this.navtab = res);
   }

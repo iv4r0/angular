@@ -22,11 +22,11 @@
                 <tr class="text-center" *ngFor="let usuario of Usuarios">
                     <td>{{ usuario.id }}</td>
                     <th>{{ usuario.dni }}</th>
-                    <th>{{ usuario.nombres }}</th>
-                    <th>{{ usuario.apellidos }}</th>
+                    <th>{{ usuario.nombres | uppercase }}</th>
+                    <th>{{ usuario.apellidos | uppercase }}</th>
                     <th>{{ usuario.telefono }}</th>
-                    <th>{{ usuario.login }}</th>
-                    <th>{{ usuario.email }}</th>
+                    <th>{{ usuario.login | lowercase }}</th>
+                    <th>{{ usuario.email | lowercase }}</th>
                     <td>
                         <a routerLink="/user-update" class="btn btn-success">
                                 <i class="fas fa-sync-alt"></i>	
